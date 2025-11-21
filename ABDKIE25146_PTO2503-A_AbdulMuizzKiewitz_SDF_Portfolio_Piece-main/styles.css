@@ -5,7 +5,6 @@
   color: #333;
 }
 
-
 html,
 body {
   margin: 0;
@@ -59,28 +58,39 @@ body {
 }
 
 @media (max-width: 640px) {
-  .row1 .flexbox {
+ .row1 .flexbox {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 75%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .profile-pic {
     width: 96px;
     height: 96px;
     border-radius: 1.5rem;
+    flex: 0 0 96px;
+  }
+
+  .name-bio {
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: left;
   }
 
   .name h1 {
     font-size: 18px;
-    margin: 0.25rem 0 0;
+    margin: 0;
   }
 
   .bio p {
     font-size: 14px;
     line-height: 1.25rem;
-    margin: 0.5rem 0 0;
+    margin: 0.25rem 0 0;
   }
 }
 
@@ -177,8 +187,12 @@ body {
 
   .profiency,
   .skills {
-    width: 75%;
-    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto 1rem auto;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .row3 {
@@ -346,13 +360,13 @@ body {
     align-items: center;
   }
   .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 16px; 
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    align-items: stretch;
+    align-items: start;
   }
 
   .pfp,
