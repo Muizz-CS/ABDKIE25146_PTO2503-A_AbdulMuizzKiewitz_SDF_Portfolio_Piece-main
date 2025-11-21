@@ -100,12 +100,12 @@ body {
   flex-wrap: wrap;
 }
 
-.profiency,
+.proficiency,
 .skills {
   flex: 1;
 }
 
-.profiency {
+.proficiency {
   background-color: #ffffff;
   padding: 1.25rem;
   border-radius: 0.75rem;
@@ -185,7 +185,7 @@ body {
     flex-direction: column;
   }
 
-  .profiency,
+  .proficiency,
   .skills {
     width: 100%;
     max-width: 720px;
