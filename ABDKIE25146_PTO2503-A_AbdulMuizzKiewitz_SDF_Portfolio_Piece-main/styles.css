@@ -153,11 +153,12 @@
 }
 
 .skill-tags li {
-  background-color: #2e6e5b;
-  color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  background-color: #ECF4F1;
+  color: #2e6e5b;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  display: inline-block;
 }
 
 @media (max-width: 640px) {
