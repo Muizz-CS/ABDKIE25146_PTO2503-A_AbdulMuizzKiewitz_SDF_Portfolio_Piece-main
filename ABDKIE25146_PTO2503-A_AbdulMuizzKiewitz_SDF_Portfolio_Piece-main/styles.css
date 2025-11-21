@@ -50,7 +50,7 @@
 }
 
 @media (max-width: 640px) {
-  .row1 {
+  .row1 .flexbox {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -63,13 +63,16 @@
     border-radius: 1.5rem;
   }
 
-  .name {
+  /* Target the heading and paragraph specifically so they override desktop rules */
+  .name h1 {
     font-size: 18px;
+    margin: 0.25rem 0 0;
   }
 
-  .bio {
+  .bio p {
     font-size: 14px;
     line-height: 1.25rem;
+    margin: 0.5rem 0 0;
   }
 }
 
