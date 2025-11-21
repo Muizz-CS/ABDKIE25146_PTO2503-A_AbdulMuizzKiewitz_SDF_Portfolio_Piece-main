@@ -1,8 +1,17 @@
 :root {
   margin: 0;
   font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #2f2f2f;
   color: #333;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #2f2f2f; 
 }
 
 .bgcontainer {
@@ -190,6 +199,7 @@
   gap: 1.25rem;
   justify-content: center;
   width: auto;
+  border-radius: 0.5rem;
 }
 
 .project-title {
