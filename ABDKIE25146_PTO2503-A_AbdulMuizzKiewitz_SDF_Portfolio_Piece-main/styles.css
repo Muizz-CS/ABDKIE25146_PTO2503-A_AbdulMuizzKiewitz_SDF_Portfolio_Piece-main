@@ -503,8 +503,10 @@
 
 .tools-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; 
+  flex-wrap: wrap;
   gap: 1rem;
+  align-items: flex-start;
 }
 
 .tools h2 {
@@ -517,6 +519,9 @@
 .tool-group {
   margin-bottom: 1.5rem;
   background-color: #f9f9f9;
+  flex: 1 1 220px; 
+  min-width: 180px;
+  box-sizing: border-box;
 }
 
 .tool-group p {
@@ -565,6 +570,17 @@
     padding: 1rem;
     margin: 0; 
     box-sizing: border-box;
+  }
+
+  .tools-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tool-group {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 0;
   }
 }
 
